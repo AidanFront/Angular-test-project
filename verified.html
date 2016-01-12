@@ -1,0 +1,15 @@
+<!--Verification Page-->
+<h2>Verify your mobile</h2>
+
+<!--Submit form for verification number-->
+<form ng-submit="verification_code(inputVerificationNumber)">
+    <div class="mobile-input-container">
+        <input class="mobile-inputbox" placeholder="Verification Code" ng-model="inputVerificationNumber" value="{{nothing}}">
+    </div>
+    <p class="btn-container2">
+        <button class="mobile-submit" type="submit" value="search">CONTINUE</button>
+        </br>
+        <p class="verification-txt">A verification code was sent to <a ng-click="ctrl.verified = false">+61 411 789 776 </a></p>
+        <p class="resend-txt"><a ng-click="resend_code()">RESEND CODE</a></p>
+    </p>   
+<form>

@@ -1,0 +1,21 @@
+<!--Start Page-->
+<h2>Welcome</h2>
+<label class="country-title">Country</label>
+<!--Country Dropdown/Select box -->
+<md-select class="dropdown-box" ng-model="ctrl.selectedCountry">
+    <md-option ng-repeat="country in ctrl.country_codes" value="{{$index}}">
+        {{country.name}} ({{country.code}})
+    </md-option>
+</md-select>
+
+<!--Submit form for Number-->
+<form ng-submit="search(ctrl.inputMobileNumber)">
+    <div class="mobile-input-container">
+        <input class="mobile-inputbox" placeholder="Your mobile" ng-model="ctrl.inputMobileNumber">
+    </div>
+    <p class="btn-container">
+        <button class="mobile-submit" type="submit">CONTINUE</button>
+        </br>
+        <span>By continuing you agree to the <a target="_blank" href="http://www.homepass.com/terms/agent">Terms</a> & <a target="_blank" href="http://www.homepass.com/terms/privacy/agent">Privacy Policy</a></span>
+    </p>   
+<form>

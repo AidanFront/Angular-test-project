@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html ng-app="homepass">
+
+  <head>
+  <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-aria.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-messages.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.js"></script>
+ 
+  <!--Built JS and CSS-->
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js"></script>
+  <script src="country_codes.js"></script>
+  
+  </head>
+
+  <body layout="row" ng-controller="Main_Controller">
+        <!--Left side-->
+        <div layout="column" class="left-side">
+            <div class="image-container">
+                <img class="homepass-logo" src="assets/BlueLogoFull.png" type="image/svg+xml" class="svg sport-image">
+            </div>
+            <div class="main-container">
+                <div ng-include="'to_verify.html'" ng-hide="ctrl.verified"></div>
+                <div ng-include="'verified.html'" ng-show="ctrl.verified"></div>
+            </div>
+        </div>
+        <!--Right Side-->
+        <div layout="column" class="right-side"></div>
+  </body>
+
+</html>
