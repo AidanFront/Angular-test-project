@@ -3,7 +3,7 @@
     width: 50%;
 }  
 .right-side {
-    background-image: url(assets/background.png);
+    background-image: url(assets/AngularJSCover.jpg);
     background-size: 100% 100%;
     height: 100vh;
     width: 50%;
@@ -11,13 +11,15 @@
 
 .image-container { 
     width: 15vw;
-    height: 10vh;
-    margin-bottom: 25vh;
+    height: 15vh;
+    margin-bottom: 20vh;
     padding: 10px 15px 0px;
     border: none;
 }
     .image-container .homepass-logo {
         height: 100%;
+        border-radius: 10px;
+        border: solid 2px red;
     }
     
 .main-container {
