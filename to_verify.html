@@ -2,7 +2,7 @@
 <h2>Welcome</h2>
 <label class="country-title">Country</label>
 <!--Country Dropdown/Select box -->
-<md-select class="dropdown-box" ng-model="ctrl.selectedCountry">
+<md-select class="dropdown-box" ng-model="ctrl.selectedCountry" aria-label="select-country">
     <md-option ng-repeat="country in ctrl.country_codes" value="{{$index}}">
         {{country.name}} ({{country.code}})
     </md-option>
